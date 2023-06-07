@@ -5,6 +5,8 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 var cors = require('cors')
  const path = require('path');
+ const app = express();
+
 
 //dotenv--
 dotenv.config();
@@ -15,7 +17,6 @@ app.use(cors());
 
 
 // rest object----
- const app = express();
 
  //middlewares----------
  app.use(express.json());
